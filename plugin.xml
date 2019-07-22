@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.cordova.plugins.defaultsms" version="0.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>DefaultSms</name>
+    <description>Android platform plugin for Cordova   easily send SMS. This app also support Default messaging features.</description>
+    <license>MIT</license>
+    <keywords>cordova,sms,Default Messaging</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+
+    <js-module name="DefaultSms" src="www/DefaultSms.js">
+        <!-- <clobbers target="cordova.plugins.DefaultSms" /> -->
+        <clobbers target="window.DefaultSms" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="DefaultSms">
+                <param name="android-package" value="com.cordova.plugins.defaultsms.DefaultSms" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+        </config-file>
+        <source-file src="src/android/DefaultSms.java" target-dir="src/com/cordova/plugins/defaultsms/DefaultSms" />
+    </platform>
+</plugin>
