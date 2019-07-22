@@ -1,0 +1,33 @@
+{
+  "name": "com.cordova.plugins.defaultsms",
+  "version": "0.0.1",
+  "description": "Android platform plugin for Cordova   easily send SMS. This app also support Default messaging features.",
+  "cordova": {
+    "id": "com.cordova.plugins.defaultsms",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashad-zaman/defaultsms.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "sms",
+    "default-messaging"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Ashaduzzaman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashad-zaman/defaultsms/issues"
+  },
+  "homepage": "https://github.com/ashad-zaman/defaultsms#readme"
+}
