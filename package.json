@@ -1,9 +1,10 @@
 {
-  "name": "com.cordova.plugins.defaultsms",
+  "name": "default-sms",
   "version": "0.0.1",
   "description": "Android platform plugin for Cordova   easily send SMS. This app also support Default messaging features.",
+  "bundleDependencies": false,
   "cordova": {
-    "id": "com.cordova.plugins.defaultsms",
+    "id": "cordova-defaultsms-plugin",
     "platforms": [
       "android"
     ]
